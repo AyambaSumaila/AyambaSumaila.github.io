@@ -1,177 +1,279 @@
 <!DOCTYPE HTML>
-
-<html>
-	<head>
-		<title>Sumaila Ayamba</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-	
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
-      </head>
-
-
-
-	<body class="container">		
-		<div style="margin-top: 10px;">
-		<img src="images/meee.PNG" alt="pict" style="border-radius: 50%; width: 200px; height: 200px;">	
-		</div>
-		<h6 class="bg-white">SUMAILA AYAMBA</h6><hr>
-
-		</div>
-
-		<!-- Element to contain animated typing -->
-		<div class="text-white fs-9 bg-dark pt-2 fw-bold pb-5 ps-3 pe-3 shadow-lg p-3 mb-5 text-center rounded"  id="element-2"></div>
-<!-- Setup and start animation! -->
-       <script>
-	var typed = new Typed('#element-2', {
-	  strings: ['<i>Hey there!</i>', 'Code? Eat? Sleep '],
-	  typeSpeed: 100,
-	  loop: true // Set loop option to true for infinite typing
-	});
-	</script>
-		<div class="text-white fs-9 fw-bold bg-dark pt-2 pb-5 ps-3 pe-3 text-center shadow-lg p-3 mb-5 rounded"  id="element"></div><!-- Load library from the CDN -->
-		<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>	  
-		<!-- Setup and start animation! -->
-		<script>
-			var typed = new Typed('#element', {
-			  strings: ['<i>Hey there! Welcome to my Portfolio</i>', 'Software Development, Data Science, Data Analysis domains.'],
-			  typeSpeed: 100,
-			  loop: true // Set loop option to true for infinite typing
-			});
-		</script>
-	
-		<!--Education Section -->
-		<h4 class="text-center fs-5">Education</h4>
-		<div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-			<p class="pt-5 ">Bachelor of Science in Information Technology - University of Cape Coast(2020-2024).<br>
-				Relevant Course Work:
-				<ul>
-			   <li>Data Structures and Algorithms</li>
-			   <li>Object Oriented Programming with Java </li>
-			   <li> Introduction to Artificial Intelligence</li>
-			   <li>Database Management Systems</li> 
-			   <li> Software Engineering</li>
-			   </ul>
-			   </p> 	
-		</div>
-			<!--Profession Summary -->			
-		<h4 class="text-center fs-5">Professional Summary</h4>	
-		<div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-		<p class="pt-5 pb-5">I am a detailed oriented person With over 1+ years of
-			experience in Data Science/Analytics and Software Development. I have a proven ability and history of
-			developing end-to-end  projects. I am curious about data, training machine
-			learning/deep learning models, and providing beautiful insights that are easily understandable. I possess
-			hands-on experience in leveraging machine learning and deep learning to solve challenging business
-			problems.
-		</p>
-		</div>
+<html lang="en">
+  <head>
+    <title>Sumaila Ayamba</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
 
 
-			<!--Work Experience Section -->
-		<h4 class="text-center pt-5 fs-5">Work Experience </h4>	
-		<div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-		<h6>Data Analyst Intern -Techno Hacks EducTech(Remote)</h6>
-		<div class="pt-5 pb-5">
-		<p>Supermartket Data Analysis</p>		
-		<p>				
-		<ul style="list-style-type: none;">
-		<li> Conducted extensive data analysis on a supermarket dataset using Python and advanced statistical	
-		methods, uncovering key insights on sales trends, customer behavior, and product performance.</li>
-		<li>Presented actionable recommendations to stakeholders, resulting in significant improvements in
-		sales, inventory management, and customer satisfaction.</li>
-		</ul>
+    <style>
+        .highlighted {
+          color: #3498db; /* Bright blue */
+        }
+        .muted {
+          color: #95a5a6; /* Light gray */
+        }
+        .heading {
+          color: #e74c3c; /* Bright red */
+        }
+        .custom{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        
+        }
 
-	   <h6>Machine Learning Intern - Mentorness(Remote)</h6>
-		<p>Diabetes Prediction</p>
-	   <ul style="list-style-type: none;"> 
-		<li> Developed a diabetes prediction model using Python, Pandas, and Scikit-Learn, achieving 90 accu-
-		racy through logistic regression and decision tree algorithms.</li>
-		<li>Deployed the model with a user-friendly Flask web interface, enhancing early detection and acces-
-		sibility of health assessments.</li>
-	  </ul>
 
-		<h6>Web Development Intern - Remote CodSoft(Remote)</h6>
-		<p>Blogging Platform</p>
-		<ul style="list-style-type: none;">	
+      
+      </style>
+  </head>
+
+  
+
+  <body class="bg-gray-100">
+
+  
+
+    <!-- Profile Image Section -->
+    <div class="flex flex-col image items-center my-10 ">
+        <a href="#">
+      <img
+        src="images/mee.jpeg"
+        alt="pict"
+        class=" rounded-full w-48 h-48 border-4 border-gray-300 shadow-lg"
+      />
+      <h1 class="text-sm font-bold highlighted mt-4">SUMAILA AYAMBA</h1>
+    </a>
+      <hr class="border-gray-400 w-32 my-4" />
+    </div>
+
+    <!-- Typing Animation Section -->
+    <div
+      id="element-2"
+      class="custom max-w-4xl mx-auto p-5  text-xl font-bold text-white bg-gray-800 py-2 px-4 shadow-lg text-center rounded-lg mb-5"
+    ></div>
+    <script>
+      var typed = new Typed("#element-2", {
+        strings: ["<i>Hey there!</i>", "Code? Eat? Sleep "],
+        typeSpeed: 100,
+        loop: true,
+      });
+    </script>
+
+    <div id="element"
+      class="custom max-w-4xl mx-auto p-5 text-xl font-bold text-white bg-gray-800 py-2 px-4 shadow-lg text-center rounded-lg mb-5"
+    >
+</div>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "<i>Hey there! Welcome to my Portfolio</i>",
+          "Software Development, Machine Learning, Data Science, Data Analysis domains.",
+        ],
+        typeSpeed: 100,
+        loop: true,
+      });
+    </script>
+
+    <!-- Education Section -->
+    <div class="max-w-4xl mx-auto p-5">
+      <h4 class="text-center text-lg font-bold mb-5 heading"><a href="#">Education</a></h4>
+      <div class="shadow-lg p-5 bg-white rounded-lg">
+        <p class="text-gray-700 ">
+          Bachelor of Science in Information Technology - University of Cape
+          Coast (2020-2024).
+          <br />
+          Relevant Course Work:
+        </p>
+        <ul class="list-disc list-inside mt-2 text-gray-600">
+          <li>Data Structures and Algorithms</li>
+          <li>Object Oriented Programming with Java</li>
+          <li>Introduction to Artificial Intelligence</li>
+          <li>Database Management Systems</li>
+          <li>Software Engineering</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Professional Summary -->
+    <div class="max-w-4xl mx-auto p-5">
+      <h4 class="text-center text-lg font-bold mb-5 heading"><a href="#">Professional Summary</a></h4>
+      <div class="shadow-lg p-5 bg-white rounded-lg">
+        <p class="text-gray-600" >
+          I am a detailed-oriented person with over 1+ years of experience in
+          Data Science/Analytics and Software Development. I have a proven
+          ability to develop end-to-end projects. I am curious about data,
+          training machine learning/deep learning models, and providing
+          beautiful insights that are easily understandable. I have hands-on
+          experience in leveraging machine learning and deep learning to solve
+          challenging business problems.
+        </p>
+      </div>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="max-w-4xl mx-auto p-5">
+      <h4 class="text-center text-lg font-bold mb-5 heading"><a href="#">Work Experience</a></h4>
+
+      <div class="shadow-lg p-5 bg-white rounded-lg mb-5">
+
+        <h6 class="font-bold text-gray-600">Web Development Intern - Remote CodSoft(Remote)</h6>
+		<p class="text-gray-700 mt-2 ">Blogging Platform</p>
+		<ul  class="list-none mt-2 text-gray-600">	
 		<li>Designed intuitive user interfaces for blog posts with a focus on user experience and accessibility.</li>
 		<li>Developed robust back-end systems using Python for efficient data handling and secure infrastructure.</li>
 		<li>Built interactive front-end features, including responsive design, post listings, search functionality, and user profile pages.</li>
 		<li>Implemented essential features like user authentication, blog post creation, and a commenting system, with deployment on Heroku for reliability.</l>
-       </ul>	
-	</p>
+       
+        <h6 class="font-bold text-gray-600">Data Analyst Intern - Techno Hacks EducTech (Remote)</h6>
+        <p class="text-gray-700 mt-2">Supermarket Data Analysis</p>
+        <ul class="list-none mt-2 text-gray-600">
+          <li>
+            Conducted extensive data analysis on a supermarket dataset using
+            Python and advanced statistical methods, uncovering key insights on
+            sales trends, customer behavior, and product performance.
+          </li>
+          <li>
+            Presented actionable recommendations to stakeholders, resulting in
+            significant improvements in sales, inventory management, and
+            customer satisfaction.
+          </li>
+        </ul>
 
-	</div>
-	</div>
-	
-			<!--Technical Skills Section-->
-	<div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-		  <h4 class="text-center pt-5 fs-5">Technical Skills </h4>	
-		   <p>
-			• Programming Languages: Python, Django, Java, JavaScript, HTML, CSS, Tailwind CSS<br>
-			• Machine Learning & AI: Training models, Data Analysis, Deep Learning
-				<br>
-			• Web Development: Front-end and back-end development<br>
-			• Tools and version control: Git, Vscode and IntelliJ Idea<br>
-			• Deployment tools: Flask,  Docker and FastAPI<br>
-			• Cloud services: Heroku and Amazon SageMaker<br>
-	
-		</div>
-			
-		
-			<!-- Certification section-->
+        <h6 class="font-bold text-gray-600">Machine Learning Intern - Mentorness(Remote)</h6>
+		<p class="text-gray-700 mt-2">Diabetes Prediction</p>
+	   <ul  class="list-none mt-2 text-gray-600"> 
+		<li> Developed a diabetes prediction model using Python, Pandas, and Scikit-Learn, achieving 90 accu-
+		racy through logistic regression and decision tree algorithms.</li>
+		<li>Deployed the model with a user-friendly Flask web interface, enhancing early detection and acces-
+		sibility of health assessments.</li>
+        </ul>
+      </div>
+    </div>
 
-			<div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-			<h4 class="container text-center  pt-5 fs-5 ">Certifications</h4>						
-			 <ul style="list-style-type: none;">
-			<li>Machine Learning and Deep Learning Projects with Python - Udemy</li>
-			<li>IBM Machine Learning Professional - Coursera </li>
-	
-			<li>Statistics with Python Specialization - Coursera</li>
-			<li>Google Cyber Security - Coursera </li> 
-			<li>Cyber Security Specialization with Python - Coursera </li> 
-			<li> Software Development & Engineering Excellence Master - Udemy</li>
-			</ul>							
-			</div>
+    <!-- Technical Skills -->
+    <div class="max-w-4xl mx-auto p-5">
+      <h4 class="text-center text-lg font-bold mb-5 heading"><a href="#">Technical Skills</a></h4>
+      <div class="shadow-lg p-5 bg-white rounded-lg">
+        <p class="text-gray-600">
+          • Programming Languages: Python, Django, Java, JavaScript, HTML, CSS,
+          Tailwind CSS <br />
+          • Machine Learning & AI: Training models, Data Analysis, Deep Learning
+          <br />
+          • Web Development: Front-end and back-end development <br />
+          • Tools and version control: Git, Vscode and IntelliJ Idea <br />
+          • Deployment tools: Flask, Docker, and FastAPI <br />
+          • Cloud services: Heroku and Amazon SageMaker <br />
+        </p>
+      </div>
+    </div>
 
-		<h4 class="container text-center  pt-5 fs-5 ">My favourite Tech books </h4>			
+    <!-- Certifications -->
+    <div class="max-w-4xl mx-auto p-5">
+      <h4 class="text-center text-lg font-bold mb-5 heading text-gray-600"><a href="#">Certifications</a></h4>
+      <div class="shadow-lg p-5 bg-white rounded-lg">
+        <ul class="list-none text-gray-600">
+          <li>Machine Learning and Deep Learning Projects with Python - Udemy</li>
+          <li>IBM Machine Learning Professional - Coursera</li>
+          <li>Statistics with Python Specialization - Coursera</li>
+          <li>Google Cyber Security - Coursera</li>
+          <li>Cyber Security Specialization with Python - Coursera</li>
+          <li>
+            Software Development & Engineering Excellence Master - Udemy
+          </li>
+        </ul>
+      </div>
+    </div>
 
-		<div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">		
-		 <ul style="list-style-type: none;" class="pt-5 pb-5">
-		<li>Design Patterns: Elements of Reusable Object-Oriented Software(The Gang of Four, GOF) By Erich Gamma, Richard Helm, Ralph Johnson and John Vlisssides</li>
+
+
+
+        <!-- Certifications -->
+    <div class="max-w-4xl mx-auto p-5">
+        <h4 class="text-center text-lg font-bold mb-5 heading"><a href="#">My favourite Tech books </a></h4>
+        <div class="shadow-lg p-5 bg-white rounded-lg">
+            <ul class="list-none text-gray-600">
+        	<li>Design Patterns: Elements of Reusable Object-Oriented Software(The Gang of Four, GOF) By Erich Gamma, Richard Helm, Ralph Johnson and John Vlisssides</li>
 		<li>Building Python Microservices Using FastAPI by Sherwin John C. Trangura</li>
-
 		<li>Django for Professionals by Williams S. Vicent</li>
-		<li>Google Cyber Security - Coursera </li> 
 		<li>Full Stack Django and React by Kolawole Mangabos</li> 
 		<li>Django for the Impatient by Greg Lim and Daniel Correa</li>
 		<li>Dsigning Microservices Usig Django by Shayank Jain</li>
 		<li>Django 5 Example by Antonio Mele</li>
-		 </ul>					
-		</div>
-			<!-- Certification section-->
-				<!-- Footer -->	
-			<footer class="bg-dark">		
-					<section class="text-center">
-					<h6>Social Media</h6></br>
-					<ul style="text-decoration:none;">
-						<a href="https://www.linkedin.com/in/sumaila-ayamba-1723742a8/" class="fab fa-linkedin text-4xl">Linkedin</a>
-						<li><a href="https://web.facebook.com/ayamba.sumaila.18" class="icon brands alt fa-linkedin-l"><span class="label">Facebook</span></a></li>
-		
-						<li><a href="https://github.com/AyambaSumaila" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					</ul>						
-					<div class="container text-white text-center">
-						<ul style="list-style-type:none" class="container"> 
-						</br>							 
-						<pre> Email:<li>sumailaayamba200@gmail.com</li></pre>
-						<p><pre> Address: <li>H/N 34, Adag, Accra</li></pre></p>
-						<p><pre> Phone: <li>+23355102838</li></pre></p>
-						</ul>
-					   </div>
-					</section>
-					 </div>
-					</ul>
-		
-			</footer>	
-	</body>
+          </ul>
+        </div>
+      </div>
+
+     <!-- Certifications -->
+     <div class="max-w-4xl mx-auto p-5">
+        <h4 class="text-center text-lg font-bold mb-5 heading">5 Key Strategies to Boost API Performance</h4>
+        <div class="shadow-lg p-5 bg-white rounded-lg">
+          <ul class="list-none text-gray-600">  
+            <li>1 Pagination:
+             - Fetch only what's needed to shrink response size.
+             - Speed up content loading with page-wise delivery.</li>
+            
+            <li>2 Asynchronous Processing:
+             - Handle multiple tasks at once for better concurrency.
+             - Keep user experience smooth with background task processing.</li>
+            
+            <li>3 Caching:
+             - Serve frequent requests quickly with pre-stored data.
+             - Reduce server load by avoiding unnecessary database hits.</li>
+            
+            <li>4 Connection Pooling:
+             - Reuse database connections to lower overhead.
+             - Scale up to handle more concurrent database interactions.</li>
+            
+            <li>5 Load Balancing:
+             - Spread requests across servers for reliability.
+             - Maintain service consistency, even with server outages.</li>
+        
+        </div>
+      </div>
+
+
+      <!-- Projects Section starts here-->
+
+          <!-- Certifications -->
+    <div class="max-w-4xl mx-auto p-5">
+        <h4 class="text-center text-lg font-bold mb-5 heading"><a href="#">Projects loading ...</a></h4>
+      
+        </div>
+      </div>
+    <!-- Project Section Ends here-->
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 py-5 text-center text-white">
+      <h6>Social Media</h6>
+      <ul class="list-none space-y-2">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/sumaila-ayamba-1723742a8/"
+            class="hover:text-gray-400"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://web.facebook.com/ayamba.sumaila.18"
+            class="hover:text-gray-400"
+            >Facebook</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/AyambaSumaila" class="hover:text-gray-400"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+      <p class="mt-4">Email: sumailaayamba200@gmail.com</p>
+      <p>Address: H/N 34, Adag, Accra</p>
+      <p>Phone: +23355102838</p>
+    </footer>
+  </body>
 </html>
