@@ -3,104 +3,103 @@
   <head>
     <title>Sumaila Ayamba</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-ytnfXqKNhJMgfsKZ+obCx6TDkA3rhgrqMTZdZZ8fq7d3/EIHJ02v+89uPmxQx0ze" crossorigin="anonymous">
-
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"  rel="stylesheet"/>
     <style>
-	
-        .highlighted {
-          color: #3498db; /* Bright blue */
-        }
-        .muted {
-          color: #95a5a6; /* Light gray */
-        }
-        .heading {
-	
-          color: purple;
-	  text-decoration:none;/* Bright red */
-        }
-        .custom{
-            padding-top: 5px;
-            padding-bottom: 5px;
-        
-        }
-	  
-	#name{
-		font-style:italic;
-	}
+   
+      :root {
+        --primary: #4f46e5;
+        --secondary: #9333ea;
+      }
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .highlighted { color: var(--primary); }
+      .heading { color: var(--secondary); text-decoration: none; }
+      #name { font-style: italic; color: var(--primary); }
+      .heading2 { color: var(--secondary); text-decoration: none; }
 
-      </style>
+
+      section h2 {
+        border-bottom: 2px solid var(--secondary);
+        padding-bottom: 0.5rem;
+      }
+
+        .card {
+            transition: transform 0.3s ease;
+        }
+      
+    </style>
   </head>
+  <body class="bg-gray-50 text-gray-800">
 
-  <body class="bg-gray-100">
-    <!-- Profile Image Section -->
-    <div class="flex flex-col image items-center my-10 ">
-        <a href="#">
-      <img
-        src="images/mee.jpeg" 
-        alt="pict"
-        class=" rounded-full w-48 h-48 border-6 border-dark-300 shadow-lg"
-      />
-      <h1 class="custom text-sm  highlighted mt-4 text-decoration-none max-w-4xl mx-auto p-2  text-xl font-bold text-white bg-gray-800 rounded-lg" id="name" >SUMAILA AYAMBA</h1>
-    </a>
-      <hr class="border-gray-400 w-32 my-4" />
-    </div>
-
-    <!-- Typing Animation Section -->
-
-	  <script>
-      var typed = new Typed("#name", {
-        strings: ["<i>SUMAILA 🥳🥺</i>", "AYAMBA 👀"],
-        typeSpeed: 200,
-        loop: true,
-      });
-	  </script>
-   <div
-      id="element-2"
-      class="custom  text-xl font-bold text-white bg-gray-800  shadow-lg text-center rounded-lg mb-2"
-    ></div>
-    <script>
-      var typed = new Typed("#element-2", {
-        strings: ["<i>Hey 👋 there!</i>", "Code? Eat? Sleep "],
-        typeSpeed: 200,
-        loop: true,
-      });
-    </script>
-</div>
-    <!-- Education Section -->
-    <div class="container  rounded-lg">
-      <h4 class="text-center text-lg font-bold mb-2 heading "><a href="#">Education</a></h4>
-      <div class="shadow-lg p-5 bg-white rounded-lg ">	      <!--text-gray-700-->
-        <p class="text-black">
-          Bachelor of Science in Information Technology - University of Cape
-          Coast (2020-2024).
-          <br>
-          <br>
-		
-	  <hr class="border-gray-400 w-50" >
-         <strong class=" text-black"> Relevant Course Work</strong>
-        </p>
-	      <!--text-gray-600-->
-        <ol class=" mt-2 text-gray-600">
-          <li>Data Structures and Algorithms using C++</li>
-	  <li>Programming and Problem Analysis using C++</li>
-          <li>Object Oriented Programming with Java</li>
-          <li>Database Management Systems</li>
-          <li>Software Engineering</li>
-	  <li>Statistical Modeling </li>
-	 <li>Introduction to Project Management </li>
-	 
-		
-        </ol>
+    <!-- Navigation -->
+    <nav class="w-full bg-white shadow-md fixed top-0 z-50">
+      <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <h1 class="text-xl font-bold text-purple-700">Sumaila Ayamba</h1>
+        <div class="space-x-4 text-purple-700 font-bold">
+          <a href="#about" class="text-purple-700 hover:text-purple-700 transition">About</a>
+          <a href="#projects" class="text-purple-700 hover:text-purple-700 transition">Projects</a>
+          <a href="#contact" class="text-purple-700 hover:text-purple-700 transition">Contact</a>
+          <a href="#certifications" class="text-purple-700 hover:text-purple-700 transition">Certifications</a>
+        </div>
       </div>
-    </div>
+    </nav>
 
+    <div class="h-20"></div>
 
-      <!-- Technical Skills -->
-      <div class="container ">
+    <!-- Hero Section -->
+    <section class="text-center py-10 ">
+      <img src="mee.jpg" alt="pict" class="mx-auto rounded-full w-40 h-40 border-4 border-purple-500 shadow-md" />
+      <h1 class="mt-4 text-3xl font-bold" id="name">SUMAILA AYAMBA</h1>
+      <p id="element-2" class="mt-2 text-lg font-medium text-purple-600"></p>
+    </section>
+
+    <script>
+      new Typed("#name", { strings: ["<i>SUMAILA 🥳🚗</i>", "AYAMBA 👀"], typeSpeed: 200, loop: true });
+      new Typed("#element-2", { strings: ["<i>Hey 👋 there!</i>", "Code? Eat? Sleep"], typeSpeed: 200, loop: true });
+    </script>
+
+    <!-- Sections -->
+    <main class="container mx-auto px-4">
+      <!-- About -->
+      <section id="about" class="my-12">
+        <h2 class="text-2xl font-bold text-center text-purple-700 mb-4">About Me</h2>
+        <div class="bg-white p-6 rounded-lg shadow">
+        <p>
+
+ I’m a detail-oriented software developer with over a year of experience in building full-stack applications using Django and React. I have a strong track record of delivering complete, end-to-end solutions and enjoy tackling complex business challenges through clean, scalable code. My hands-on experience with the Django framework and React allows me to create robust and user-friendly applications that drive real results.
+
+        </p>
+        
+          <div class="mt-6">
+            <h3 class="text-xl font-bold heading text-center">Education</h3>
+            <div class="mt-4 p-4 bg-gray-50 rounded shadow">
+              <p><strong>General Science Bawku Senior High School</strong> (2014-2017)</p>
+              
+              <p><strong>Bachelor of Science in Information Technology</strong> — University of Cape Coast (2020-2024)</p>
+              <hr class="my-3">
+              <strong>Relevant Coursework</strong>
+              <ul class="list-disc list-inside mt-2 text-gray-600">
+                <li>Data Structures and Algorithms using C++</li>
+                <li>Programming and Problem Analysis using C++</li>
+                <li>Object Oriented Programming with Java</li>
+                <li>Database Management Systems</li>
+                <li>Software Engineering</li>
+                <li>Statistical Modeling</li>
+                <li>Introduction to Project Management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<section>
+       <!-- Technical Skills -->
+      <div class="container">
         <h4 class="text-center text-lg font-bold mb-5 heading "><a class="heading" href="#">Technical Skills</a></h4>
         <div class="shadow-lg p-5 bg-white text-gray-600 rounded-lg">
              <!-- Progress Bar Container -->
@@ -114,38 +113,38 @@
 
   <div class="w-full bg-gray-200 rounded-full h-4 mt-2">
     <!-- JavaScript Progress Bar -->
-    <div class="bg-pink-600 h-4 rounded-full" style="width: 50%;"></div>
+    <div class="bg-pink-600 h-4 rounded-full" style="width: 60%;"></div>
   </div>
   
-  <p class="text-sm text-gray-600">Django: 50%</p>
+  <p class="text-sm text-gray-600">Django: 60%</p>
   <br>
   
   <div class="w-full bg-gray-200 rounded-full h-4 mt-2">
     <!-- Java Progress Bar -->
     <div class="bg-yellow-500 h-4 rounded-full" style="width: 40%;"></div>
   </div>
-  <p class="text-sm text-gray-600">Java: 30%</p>
+  <p class="text-sm text-gray-600">Java: 40%</p>
 
   <div class="w-full bg-gray-200 rounded-full h-4 mt-2">
     <!-- JavaScript Progress Bar -->
-    <div class="bg-purple-600 h-4 rounded-full" style="width: 10%;"></div>
+    <div class="bg-purple-600 h-4 rounded-full" style="width: 20%;"></div>
   </div>
   
-  <p class="text-sm text-gray-600">Spring Boot: 10%</p>
-  <br>
+  <p class="text-sm text-gray-600">Spring Boot: 20%</p>
+  <div>
   
   <div class="w-full bg-gray-200 rounded-full h-4 mt-2">
     <!-- C++ Progress Bar -->
-    <div class="bg-green-600 h-4 rounded-full" style="width: 30%;"></div>
+    <div class="bg-green-600 h-4 rounded-full" style="width: 40%;"></div>
   </div>
-  <p class="text-sm text-gray-600">C++: 30%</p>
+  <p class="text-sm text-gray-600">C++: 40%</p>
   <br>
   
   <div class="w-full bg-gray-200 rounded-full h-4 mt-2">
     <!-- JavaScript Progress Bar -->
-    <div class="bg-blue-300 h-4 rounded-full" style="width: 35%;"></div>
+    <div class="bg-blue-300 h-4 rounded-full" style="width: 50%;"></div>
   </div>
-  <p class="text-sm text-gray-600">JavaScript: 35%</p>
+  <p class="text-sm text-gray-600">JavaScript: 50%</p>
 
 
 <div class="w-full bg-gray-200 rounded-full h-4 mt-2">
@@ -170,8 +169,8 @@
   </div>
   <p class="text-sm text-gray-600">SQL: 70%</p>
 
- </div>
- 
+ </div> 
+</div>
 
   
 
@@ -188,9 +187,11 @@
         </p>
       </div>
     </div>
+    
+</div>
 
-
-    <!-- Work Experience -->
+</section>
+      <!-- Work Experience -->
     <div class="rounded-lg">
       <h4 class="text-center text-lg font-bold mb-1 heading  "><a class="heading" href="#">Work Experience</a></h4>
     <div class="shadow-lg p-5 bg-white text-gray-600  rounded-lg mb-2">
@@ -231,110 +232,53 @@
       </div>
     </div>  
   
-    <!-- Certifications -->
-    <div class="container text-gray-600 ">
-      <h4 class="text-center text-lg font-bold mb-5  heading text-gray-600"><a  class="heading" href="#">Certifications</a></h4>
-      <div class="shadow-lg p-5 bg-white text-gray-600 rounded-lg">
-        <ol class=" text-gray">
-          <li>  Machine Learning and Deep Learning Projects with Python - Udemy</li><br>
-          <li>  IBM Machine Learning Professional - Coursera</li><br>
-          <li> Statistics with Python Specialization - Coursera</li><br>
-          <li> Google Cyber Security Specialization - Coursera</li><br>
-          <li>  Cyber Security Specialization with Python - Coursera</li><br>
-          <li>  Software Development & Engineering Excellence Master - Udemy </li><br>
-        </ol>
-      </div>
-    </div>
-
-
-
-
-        <!-- Certifications -->
-    <div class="container">
-        <br>
-        <h4 class="text-center text-lg font-bold mb-5 heading "><a class="heading" href="#"> Tech books worth reading </a></h4>
-        <div class="shadow-lg p-5 bg-white text-gray-600  rounded-lg">
-          <ol class="text-gray">
-            <li>  Software Engineering at Google by Titus Winters , Tom Manshreck , and Hyrum Wright, 2020. </li>
-	   <li> The Clean Architecture by Roberts C. Martins,  2020. </li>  <br>
-		  
-	    <li>Designing Microservices	Using Django Structuring, Deploying and Managing the Microservices Architecture with Django
-		by
-		Shayank Jain, 2020.
-	    </li>
-		  
-            <li>  Real-World Software Development With Java by Raoul-Gabriel Urma, Richard Warburton</li>
-	  <br>           
-          <li>  Design Patterns: Elements of Reusable Object-Oriented Software(The Gang of Four, GOF) By Erich Gamma, Richard Helm, Ralph Johnson and John Vlisssides</li><br>
-            <br>
-            <li> Deciphering Object-Oriented Programming with C++ by Dorothy K. KirK, 2023.</li>
+      <!-- Projects -->
+       <br>
+        <br><br>
             
-          </ol>
-        </div>
-      </div>
-
-     <!-- Certifications -->
-	      <br>
-     <div class="container">
-        <br>
-        <h4 class="text-center text-lg font-bold mb-5 heading ">5 Key Strategies to Boost API Performance</h4>
-        <div class="shadow-lg p-5 bg-white text-gray-600 rounded-lg">
-          <ol class="text-gray-600">  
-            <li>Pagination:
-             - Fetch only what's needed to shrink response size.
-             - Speed up content loading with page-wise delivery.</li>
-            <br>
-            <li>Asynchronous Processing:
-             - Handle multiple tasks at once for better concurrency.
-             - Keep user experience smooth with background task processing.</li>
-            <br>
-            <li>Caching:
-             - Serve frequent requests quickly with pre-stored data.
-             - Reduce server load by avoiding unnecessary database hits.</li>
-           <br> 
-            <li> Connection Pooling:
-             - Reuse database connections to lower overhead.
-             - Scale up to handle more concurrent database interactions.</li>
-            <br>
-            <li> Load Balancing:
-             - Spread requests across servers for reliability.
-             - Maintain service consistency, even with server outages.</li>
-           <br>
-	  </ol>
         
-        </div>
-      </div>
-      <!-- Projects Section starts here-->
-
-          <!-- Certifications -->
-    <br>
-    <div class="container">
-        <h4 class="text-center text-lg font-bold mb-5 "><a class="heading".  href="#">More Projects loading  ...</a></h4>
-        <div class="card bg-white">
-        
-          <div class="card-body text-gray-600 ">
-            <h5 class="card-title font-bold ">MINI NETFLIX WEB APPLICATION</h5>
-            <p class="card-text text-gray-600">
-              
-              Mini Netflix is a Django-based web application designed for 
-              movie enthusiasts to search, review, and track movies they’ve watched.
-               Users can sign up, search for movies by title, add detailed reviews, and indicate whether they would like to watch the movie again. This application provides a simple, intuitive interface for users to manage their movie experiences and share their opinions with others.
+       <section id="projects2" class="my-12">
+        <h2 class="text-2xl font-bold text-center text-purple-700 mb-6">Projects</h2>
+        <div class="card bg-white shadow-md rounded-lg overflow-hidden">
+          <div class="card-body text-gray-700 p-6">
+            <h5 class="card-title text-xl font-semibold text-purple-800 mb-3">NETFLIX WEB APPLICATION</h5>
+            <p class="card-text mb-4">
+              Netflix Clone is a Django-based web application designed for movie lovers to search, review, and keep track of films they’ve watched. Users can create accounts, explore movie titles, submit in-depth reviews, and indicate rewatch preferences. With a clean, user-friendly interface, this project encourages engagement and community feedback.
             </p>
-		  <br>
-		  <hr>
-             <h6><strong>Technologies used </strong></h6>
-		  <ol class="text-gray-600"> 
-		   <li>Django </li>
-		  <li>JavaScript</li>
-		  <li>HTML CSS.Bootstrap</li>
-		 <li>PostgresSQL</li>
-		  </ol>
-        </div>
-        
-        <div class="card" aria-hidden="true">
-          <img src="images/screen.png" class="card-img-top" alt="picture">
-          <img src="images/screen_hom.png" class="card-img-top" alt="picture">
+            <hr class="my-4">
+            <h6 class="text-lg font-bold text-purple-700 mb-2">Technologies Used</h6>
+            <ul class="list-disc list-inside space-y-1 text-gray-600">
+              <li>Django</li>
+              <li>JavaScript</li>
+              <li>HTML, CSS, Bootstrap</li>
+              <li>PostgreSQL</li>
+            </ul>
+          </div>
+
+          <div class="card" aria-hidden="true">
           <img src="images/screen_home.png" class="card-img-top" alt="picture">
+          <br>
+          <br>
+          <br>
+          <img src="images/new.png" class="card-img-top" alt="picture">
+          <br>
+            <br>
+          <br>
+          <br>
+          <img src="images/new2.png" class="card-img-top" alt="picture">
+          <br>
+          <br>
+          <br>
+
+          
+          <img src="images/screen.png" class="card-img-top" alt="picture">
+  <br>
+          <br>
+          <br>
+          <img src="images/screen_hom.png" class="card-img-top" alt="picture">
+            <br>
+          <br>
+          <br>
           <div class="card-body">
             <h5 class="card-title placeholder-glow">
               <span class="placeholder col-6"></span>
@@ -352,176 +296,24 @@
           </div>
           </div>
         </div>
-        
-        <br><br>
+        <!-- Keep project cards as is -->
+      </section>
 
 
-        <div class="card bg-white text-gray-600">        
-          <div class="card-body">
-            <h5 class="card-title font-bold">DJANGO BLOGGING APPLICATION</h5>
-            <p class="card-text text-gray-600">              
-              The Blog App is a secure and scalable backend solution built with Django, enabling users to perform CRUD operations on blog posts with token-based authentication, ensuring only authenticated users can modify content. It features robust error handling, clear feedback for invalid requests, and flexibility for integration with frontend frameworks like React or Angular, and mobile applications. By adhering to best practices in authentication and data protection, the Blog API supports the development of secure, scalable, and user-friendly blogging platforms.
-            </p>
-             <br>
-	     <hr>
-             <h6><strong> Technologies used </strong></h6>
-             <ol class="text-gray-600"> 
-	     <li>Django </li>
-	     <li>Django Rest Framework</li>
-	     <li>HTML CSS.Bootstrap</li>
-	     <li>PostgresSQL</li>
-	    </ol>
-        </div>
-        <br>
-        <div class="card" aria-hidden="true">
-          <img src="images/blog_3.png" class="card-img-top" alt="picture"><br>
-          <img src="images/me.png" class="card-img-top" alt="picture"><br>
-          <img src="images/me_3.png" class="card-img-top" alt="picture"><br>
 
-          <img src="images/blog.png" class="card-img-top" alt="picture"><br>
+       <section id="projects" class="my-12">
+        <div class="card bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="card-body">
 
-          <img src="images/screen_3.png" class="card-img-top" alt="picture">
-          <div class="card-body">
-            <h5 class="card-title placeholder-glow"> 
-              <span class="placeholder col-6"></span>
-            </h5>
-                    
-            
-            
-            <p class="card-text placeholder-glow">
-              <span class="placeholder col-7"></span>
-              <span class="placeholder col-4"></span>
-              <span class="placeholder col-4"></span>
-              <span class="placeholder col-6"></span>
-              <span class="placeholder col-8"></span>
-            </p>
-            <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
-            <br><br><br>
-            <a href="https://github.com/AyambaSumaila/blog-django-api" class="btn btn-primary">View project</a>
-          </div>
-          </div>
-        </div>
-
-
-        <div class="card bg-white">        
-          <div class="card-body text-gray-600">
-            <h5 class="card-title font-bold">CONTACT BOOK APPLICATION</h5>
-            <p class="card-text text-gray-600">
-              
-              The Contact Book Application project showcases the practical application of binary search trees (BSTs) in efficiently 
-		    managing contacts by enabling quick addition,
-		    deletion, search, and listing of contacts, even with large datasets. 
-		    It provides hands-on experience with BSTs and binary search, reinforcing key data structure concepts while building a functional application. Each BST node represents a contact, storing details like name, phone number, and email.
-	    </p>
-            <br><hr>
-	 <div class="bg-white text-gray-600 ">
-            <strong>Description</strong>
-            <p>The Contact Book Application is a Python-based GUI application that 
-              allows users to efficiently manage their contacts. Built using Tkinter, 
-		    the application supports various functionalities, including adding, finding, updating, deleting contacts, and managing favorites. 
-              It also features birthday tracking and CSV import/export capabilities
-	    </p>
-	 </di>
-        </div>
-        <br>
-
-	  <hr>
-            <h6 class="text-gray-600"><strong>Technologies used </strong></h6>
-		  <ol class="text-gray-600"> 
-			  <li>Python</li>
-			    <li>Tkinter</li>
-		  </ol>
-        <div class="card" aria-hidden="true">
-          <img src="images/image_5.png" class="card-img-top" alt="picture">
-          <img src="images/image_2.png" class="card-img-top" alt="picture">
-          <img src="images/image_4.png" class="card-img-top" alt="picture">
-
-          <div class="card-body">
-            <h5 class="card-title placeholder-glow">
-              <span class="placeholder col-6"></span>
-            </h5>
-            <p class="card-text placeholder-glow">
-              <span class="placeholder col-7"></span>
-              <span class="placeholder col-4"></span>
-              <span class="placeholder col-4"></span>
-              <span class="placeholder col-6"></span>
-              <span class="placeholder col-8"></span>
-            </p>
-            <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
-            <br><br><br>
-            <a href="https://github.com/AyambaSumaila/algorithm-binary-search-contact-book-manager-project?tab=readme-ov-file" class="btn btn-primary">View project</a>
-          </div>
-          </div>
-        </div>
-      </div>
-
-
-        <br><br>
-        <div class="card bg-white">        
-          <div class="card-body text-gray-white">
-            <h5 class="card-title font-bold">INSTAGRAM DATA ANALYSIS</h5>
-            <p class="card-text text-gray-600">
-              The Instagram Analysis project examines key metrics such as profile visits, 
-              post impressions, comments, and shares to identify strategies for boosting 
-              content visibility and engagement. It highlights the strong correlation 
-              between shares and profile visits in increasing overall reach. 
-              To maximize impressions, the analysis recommends creating engaging, 
-              shareable content, optimizing bios and highlights to drive profile visits, 
-              and focusing on high-quality content that generates more likes, comments, 
-              and shares.
-              <br>
-              These insights provide actionable steps to enhance Instagram engagement and visibility.
-  
-          </p>
-         <br>
-		  <hr>
-        <h6><strong>Technologies used </strong></h6>
-		  <ol class="text-gray-600"> 
-			  <li>Pandas</li>
-			    <li>Numpy</li>
-			    <li>Python</li>
-			  <li>Seaborn</li>
-			  <li>Matplotlib</li>
-			  
-		  </ol> 
-        
-        </div>
-        
-        <div class="card" aria-hidden="true">
-          <img src="images/insta.png" class="card-img-top" alt="picture">
-          <img src="images/screen_5.png" class="card-img-top" alt="picture">
-          <img src="images/screen_6.png" class="card-img-top" alt="picture">
-
-          <div class="card-body">
-            <h5 class="card-title placeholder-glow">
-              <span class="placeholder col-6"></span>
-            </h5>
-            <p class="card-text placeholder-glow">
-              <span class="placeholder col-7"></span>
-              <span class="placeholder col-4"></span>
-              <span class="placeholder col-4"></span>
-              <span class="placeholder col-6"></span>
-              <span class="placeholder col-8"></span>
-            </p>
-            <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
-            <br><br><br>
-            <a href="https://github.com/AyambaSumaila/Instagram-reach-analysis-using-python" class="btn btn-primary">View project</a>
-          </div>
-          </div>
-        </div>
-
-       <br><br>
-        <div class="card bg-white text-gray-600 ">        
-          <div class="card-body">
-            <h5 class="card-title font-bold">SALES PER UNIT vs. NEWSPAPER, TV, and RADIO</h5>
-            <p class="card-text text-gray-600">              
+            <h5 class="card-title text-xl font-semibold text-purple-800 mb-3">SALES PER UNIT vs. NEWSPAPER, TV, and RADIO</h5>
+            <p class="card-text mb-4">              
               This project analyzes the impact of advertising expenditure on sales per unit across three different mediums: Newspaper, TV, and Radio. The goal is to determine which channels most effectively drive sales and provide strategic recommendations for optimizing the marketing budget.           </p>
             <p>
               This analysis demonstrates that TV and Radio are the most effective advertising mediums for driving sales. Strategic budget allocation towards these channels, 
               while reducing Newspaper spend, is recommended to maximize return on investment.
             </p>
         <br><hr>
-          <p><strong>Recommendations</strong></p>
+          <p class="text-lg font-bold text-purple-700 mb-2"><strong>Recommendations</strong></p>
           <p class="text-gray-600">
             Increase TV Budget:
     Allocate a larger portion of the budget to TV advertising, given its strong correlation with sales.
@@ -533,24 +325,73 @@ Reevaluate Newspaper Spend:
 		  <br>
 
 		    <hr>
-        <h6><strong>Technologies used </strong></h6>
-		  <ol class="text-gray-600"> 
+        <h6 class="text-lg font-bold text-purple-700 mb-2"><strong>Technologies used </strong></h6>
+		  <ul class="list-disc list-inside space-y-1 text-gray-600"> 
 			  <li>Pandas</li>
 			    <li>Numpy</li>
 			    <li>Python</li>
 			  <li>Seaborn</li>
 			  <li>Matplotlib</li>
 			  
-		  </ol>
+		  </ul>
         </div>
         
-        <div class="card" aria-hidden="true">
+          <div class="card" aria-hidden="true">
           <img src="images/sales.png" class="card-img-top" alt="picture">
           <br>
           <img src="images/sales_2.png" class="card-img-top" alt="picture">
           <br>
           <img src="images/sales_3.png" class="card-img-top" alt="picture">
+          <div class="card-body">
+            <h5 class="card-title placeholder-glow">
+              <span class="placeholder col-6"></span>
+            </h5>
+            <p class="card-text placeholder-glow">
+              <span class="placeholder col-7"></span>
+              <span class="placeholder col-4"></span>
+              <span class="placeholder col-4"></span>
+              <span class="placeholder col-6"></span>
+              <span class="placeholder col-8"></span>
+            </p>
+            <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+          <br><br><br>
+            <a href="https://github.com/AyambaSumaila/future-sales-prediction-with-machine-learning?tab=readme-ov-file" class="btn btn-primary">View project</a>
+        
+        </div>
+          </div>
+        </div>
+        <!-- Keep project cards as is -->
+      </section>
 
+
+
+
+       <section id="projects" class="my-12">
+        <div class="card bg-white shadow-md rounded-lg overflow-hidden">
+
+         <div class="card-body">
+            <h5 class="card-title text-xl font-semibold text-purple-800 mb-3">DJANGO BLOGGING APPLICATION</h5>
+            <p class="card-text text-gray-600">              
+              The Blog App is a secure and scalable backend solution built with Django, enabling users to perform CRUD operations on blog posts with token-based authentication, ensuring only authenticated users can modify content. It features robust error handling, clear feedback for invalid requests, and flexibility for integration with frontend frameworks like React or Angular, and mobile applications. By adhering to best practices in authentication and data protection, the Blog API supports the development of secure, scalable, and user-friendly blogging platforms.
+            </p>
+             <br>
+	     <hr>
+             <h6 class="card-title text-xl font-semibold text-purple-800 mb-3"><strong> Technologies used </strong></h6>
+             <ul class="list-disc list-inside space-y-1 text-gray-600"> 
+	     <li>Django </li>
+	     <li>Django Rest Framework</li>
+	     <li>HTML CSS.Bootstrap</li>
+	     <li>PostgresSQL</li>
+	    </ul>
+        </div>
+          <div class="card" aria-hidden="true">
+                <img src="images/blog_3.png" class="card-img-top" alt="picture"><br>
+          <img src="images/me.png" class="card-img-top" alt="picture"><br>
+          <img src="images/me_3.png" class="card-img-top" alt="picture"><br>
+
+          <img src="images/blog.png" class="card-img-top" alt="picture"><br>
+
+          <img src="images/screen_3.png" class="card-img-top" alt="picture">
           <div class="card-body">
             <h5 class="card-title placeholder-glow">
               <span class="placeholder col-6"></span>
@@ -564,60 +405,87 @@ Reevaluate Newspaper Spend:
             </p>
             <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
             <br><br><br>
-            <a href="https://github.com/AyambaSumaila/future-sales-prediction-with-machine-learning?tab=readme-ov-file" class="btn btn-primary">View project</a>
+            <a href="https://github.com/AyambaSumaila/Mini-Netflix-Django" class="btn btn-primary">View project</a>
           </div>
           </div>
         </div>
-        <br><br>
-      </div>
-    <!-- Project Section Ends here-->
-
-
- <div class="container text-center mt-5 mb-5">
-    <form  action="" class="fs-3 "> 
-      <label >Name: </label>
-      <input type="text" required>
-      <br>
-      <br>
-      <label>Email: </label>
-      <input type="email" required>
-      <br>
-      <br>
-      <label>Phone number: </label>
-      <input type="number" required>
-      <br>
-      <br>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </div>
+        <!-- Keep project cards as is -->
+      </section>
 
 
 
-    <!-- Footer Section -->
-<footer class="bg-gray-800 py-5 text-center text-white w-screen">
-  <h6><a><strong>SERVICES</strong></a></h6>
-  <ul>
-    <li>Web Development</li>
-    <li>Data Analysis</li>
-    <li>Data Science</li>
-    <li>Machine Learning</li>
-  </ul>
-  <br><hr><br>  
-  <h6><strong>Social Media</strong></h6>      
-  <ul class="list-none space-y-2">
+
+
+       
+      <!-- Certifications -->
+      <section id="certifications" class="my-12">
+        <h2 class="text-2xl font-bold text-center text-purple-700 mb-6">Certifications</h2>
+        <div class="bg-white p-6 rounded shadow text-gray-700">
+          <ul class="list-disc list-inside">
+            <li>Machine Learning and Deep Learning Projects with Python - Udemy</li>
+            <li>IBM Machine Learning Professional - Coursera</li>
+            <li>Statistics with Python Specialization - Coursera</li>
+            <li>Google Cyber Security Specialization - Coursera</li>
+            <li>Cyber Security Specialization with Python - Coursera</li>
+            <li>Software Development & Engineering Excellence Master - Udemy</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="my-12">
+        <h2 class="text-2xl font-bold text-center text-purple-700 mb-6">Contact</h2>
+        <form class="bg-white p-6 rounded shadow">
+          <div class="mb-4">
+            <label class="block font-semibold mb-1">Name:</label>
+            <input type="text" class="w-full border border-gray-300 rounded px-3 py-2" required>
+          </div>
+          <div class="mb-4">
+            <label class="block font-semibold mb-1">Email:</label>
+            <input type="email" class="w-full border border-gray-300 rounded px-3 py-2" required>
+          </div>
+          <div class="mb-4">
+            <label class="block font-semibold mb-1">Phone:</label>
+            <input type="tel" class="w-full border border-gray-300 rounded px-3 py-2" required>
+          </div>
+          <button type="submit" class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t py-6 text-center mt-12 text-white" style="background-color: #4f46e5;">
+      <p class="text-lg font-semibold text-white">SERVICES</p>
+      <ul class="mt-2 space-y-1">
+        <li>Web Development</li>
+        <li>Data Analysis</li>
+        <li>Data Science</li>
+        <li>Machine Learning</li>
+      </ul>
+      <div class="mt-4 text-white">
+        <p class="font-bold">Social Media</p>
+
+          <ul class="list-none space-y-2">
     <li>
       <a href="https://www.linkedin.com/in/sumaila-ayamba-1723742a8/" class="hover:text-gray-400">LinkedIn</a>
     </li>
     <li>
       <a href="https://web.facebook.com/ayamba.sumaila.18" class="hover:text-gray-400">Facebook</a>
     </li>
-    <i class="fa fa-facebook-square" aria-hidden="true"></i>
     <li>
       <a href="https://github.com/AyambaSumaila" class="hover:text-gray-400">GitHub</a>
     </li>
   </ul>
-</footer>
+        <!-- Add social links here -->
+      </div>
       
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <p class="mt-4 text-sm text-gray-400">For inquiries, please contact me at:</p>
+
+      <p>
+        copy; 2024 Sumaila Ayamba. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   </body>
 </html>
