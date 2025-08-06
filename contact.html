@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact - GreenRoost Poultry</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-white text-gray-800 font-sans">
-  <!-- Navbar -->
-
-  <nav class="bg-green-700 text-white p-4">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - GreenRoost Poultry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-800 font-sans">
+    <!-- Navbar -->
+<!-- Fixed Navbar -->
+<nav class="bg-green-700 text-white p-4 fixed top-0 w-full z-50 shadow-md">
   <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap">
+
     <!-- Brand -->
-    <a href="index.html" class="text-xl font-bold text-center w-full md:w-auto mb-2 md:mb-0">GreenRoost Poultry</a>
+    <a href="index.html" class="text-xl font-bold text-center w-full md:w-auto mb-2 md:mb-0">
+      GreenRoost Poultry
+    </a>
 
     <!-- Mobile menu button -->
     <button id="menu-btn" class="md:hidden text-white focus:outline-none">
@@ -24,50 +27,142 @@
 
     <!-- Menu items -->
     <ul id="menu" class="w-full md:w-auto md:flex md:space-x-6 text-xl font-bold hidden md:block text-center">
-      <li class="mt-2 md:mt-0"><a href="index.html" class="block hover:text-yellow-300">Home</a></li>
-      <li class="mt-2 md:mt-0"><a href="about.html" class="block hover:text-yellow-300">About</a></li>
-
-      <li class="mt-2 md:mt-0"><a href="products.html" class="block hover:text-yellow-300">Products</a></li>
+      <li class="mt-2 md:mt-0">
+        <a href="index.html" class="block hover:text-yellow-300">Home</a>
+      </li>
+      <li class="mt-2 md:mt-0">
+        <a href="about.html" class="block hover:text-yellow-300">About</a>
+      </li>
+      <li class="mt-2 md:mt-0">
+        <a href="products.html" class="block hover:text-yellow-300">Products</a>
+      </li>
     </ul>
   </div>
 </nav>
 
-<!-- Toggle Script -->
-<script>
-  const menuBtn = document.getElementById('menu-btn');
-  const menu = document.getElementById('menu');
+    <!-- Toggle Script -->
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
 
-  menuBtn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
-</script>
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
 
-  <!-- [insert navbar code here] -->
+    <!-- [insert navbar code here] -->
+     <br>
+    <br>
+        
+    <br>
+<br>
 
-  <section class="py-16 px-4 md:px-32 text-center">
-    <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
-    <p class="mb-2">📍 Location: Tamale, Ghana</p>
-    <p class="mb-2">📞 Phone: +233 123 456 789</p>
-    <p class="mb-4">✉️ Email: info@sumailapoultry.com</p>
+    <section class="py-16 px-4 md:px-32 text-center">
+      <h2
+        class="text-3xl font-bold mb-6 text-4xl md:text-5xl font-bold text-green-800 mb-4"
+      >
+        Contact Us
+      </h2>
+      <p class="mb-2">📍 Location: Accra, Ghana</p>
+      <p class="mb-2">📞 Phone: +233 123 456 789</p>
+      <p class="mb-4">✉️ Email: info@greenroostpoultry.com</p>
 
-    <form class="max-w-md mx-auto mt-6 space-y-4">
-      <input type="text" placeholder="Your Name" class="w-full border p-2 rounded" />
-      <input type="email" placeholder="Your Email" class="w-full border p-2 rounded" />
-      <textarea placeholder="Your Message" rows="4" class="w-full border p-2 rounded"></textarea>
-      <button class="bg-green-700 text-white px-6 py-2 rounded hover:bg-green-600">Send Message</button>
-    </form>
-  </section>
+      <form class="max-w-md mx-auto mt-6 space-y-4">
+        <input
+          type="text"
+          placeholder="Your Name"
+          class="w-full border p-2 rounded"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Your Email"
+          class="w-full border p-2 rounded"
+          required
+        />
+        <textarea
+          placeholder="Your Message"
+          rows="4"
+          class="w-full border p-2 rounded"
+          required
+        ></textarea>
+        <button
+          class="bg-green-700 text-white px-6 py-2 rounded hover:bg-green-600"
+        >
+          Send Message
+        </button>
+      </form>
+    </section>
 
-  <!-- Footer -->
-   <footer class="bg-green-800 text-white py-6 text-center">
-  <p>&copy; 2025 GreenRoost Poultry. All rights reserved.</p>
-  <div class="mt-2 space-x-4">
-    <a href="#" class="hover:underline">Facebook</a>
-    <a href="#" class="hover:underline">Instagram</a>
-    <a href="#" class="hover:underline">WhatsApp</a>
-  </div>
-</footer>
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-10 px-6">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left"
+      >
+        <!-- Company Info -->
+        <div>
+          <h3 class="text-2xl font-bold mb-2">GreenRoost Poultry</h3>
+          <p class="text-sm text-gray-300">
+            Providing fresh, ethical poultry products across Ghana since 2020.
+          </p>
+        </div>
 
-  <!-- [insert footer code here] -->
-</body>
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-xl font-semibold mb-2">Quick Links</h4>
+          <ul class="space-y-1 text-sm">
+            <li>
+              <a href="index.html" class="hover:underline hover:text-yellow-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="products.html"
+                class="hover:underline hover:text-yellow-300"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a href="about.html" class="hover:underline hover:text-yellow-300"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="hover:underline hover:text-yellow-300"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div>
+          <h4 class="text-xl font-semibold mb-2">Connect with Us</h4>
+          <div class="flex justify-center md:justify-start space-x-4 text-xl">
+            <a href="#" class="hover:text-yellow-300 transition"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="hover:text-yellow-300 transition"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="hover:text-yellow-300 transition"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div
+        class="mt-10 border-t border-green-700 pt-4 text-sm text-center text-gray-300"
+      >
+        &copy; 2025 GreenRoost Poultry. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- [insert footer code here] -->
+  </body>
 </html>
