@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - GreenRoost Poultry</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Navbar -->
+  <nav class="bg-green-700 text-white p-4">
+  <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap">
+    <!-- Brand -->
+    <a href="index.html" class="text-xl font-bold text-center w-full md:w-auto mb-2 md:mb-0">GreenRoost Poultry</a>
+
+    <!-- Mobile menu button -->
+    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Menu items -->
+    <ul id="menu" class="w-full md:w-auto md:flex md:space-x-6 text-xl font-bold hidden md:block text-center">
+      <li class="mt-2 md:mt-0"><a href="index.html" class="block hover:text-yellow-300">Home</a></li>
+      <li class="mt-2 md:mt-0"><a href="products.html" class="block hover:text-yellow-300">Products</a></li>
+      <li class="mt-2 md:mt-0"><a href="contact.html" class="block hover:text-yellow-300">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Toggle Script -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+
+  <!-- [insert navbar code here] -->
+
+  <section class="py-16 px-4 md:px-32 text-center bg-gray-50">
+    <h2 class="text-3xl font-bold mb-6">About Us</h2>
+   
+    
+   <div class="container">
+    
+    
+  <pre class="bg-gray-100 p-4 rounded shadow-md">
+    
+
+    <p class="mb-4"> About Us GreenRoost Poultry
+
+Founded in 2020, GreenRoost Poultry was born out of a passion for healthy living and sustainable farming. From humble beginnings in the heart of Ghana, we’ve grown into a trusted name for premium poultry products that nourish families and support local businesses.
+
+At GreenRoost, we specialize in ethically-raised broilers, high-yield layers, and 100% organic poultry feed. Our chickens are raised with care, free from harmful additives, and our eggs are gathered fresh daily, ensuring quality and taste you can trust.
+
+We’re more than just a farm — we’re a community committed to healthier food systems, responsible farming practices, and building a stronger future for agriculture in Ghana.
+🎯 Our Mission
+
+To provide fresh, ethically-raised poultry products that promote healthy living and uplift local communities through sustainable agriculture.
+👁️ Our Vision
+
+To become Ghana’s leading name in responsible poultry farming, known for our quality, transparency, and community-driven values.
+📈 Our Journey
+Year	Milestone
+2020	GreenRoost Poultry was established with 100 chickens and 2 staff.
+2021	Expanded to supply local markets with fresh eggs and broilers.
+2022	Launched our first organic feed product line.
+2023	Partnered with 10+ schools and hotels across Northern Ghana.
+2024	Introduced mobile delivery services for customers in Tamale.
+Meet Our Team
+
+    Sumaila Ayamba – Founder & Farm Manager
+    Passionate about sustainable farming and youth empowerment.
+
+    Fatima Abdul-Rahman – Operations Lead
+    Ensures day-to-day farm activities run smoothly and efficiently.
+
+    Yaw Mensah – Poultry Health Specialist
+    Keeps our flock healthy and our biosecurity standards high.</p>
+   </pre>
+   </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="bg-green-800 text-white py-6 text-center">
+  <p>&copy; 2025 Sumaila Poultry Farm. All rights reserved.</p>
+  <div class="mt-2 space-x-4">
+    <a href="#" class="hover:underline">Facebook</a>
+    <a href="#" class="hover:underline">Instagram</a>
+    <a href="#" class="hover:underline">WhatsApp</a>
+  </div>
+</footer>
+
+  <!-- [insert footer code here] -->
+</body>
+</html>
