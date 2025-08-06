@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - GreenRoost Poultry</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-white text-gray-800 font-sans">
-  <!-- Navbar -->
-  <nav class="bg-green-700 text-white p-4">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - GreenRoost Poultry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+ 
+    <!-- Navbar -->
+   <!-- Fixed Navbar -->
+<nav class="bg-green-700 text-white p-4 fixed top-0 w-full z-50 shadow-md">
   <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap">
+    
     <!-- Brand -->
-    <a href="index.html" class="text-xl font-bold text-center w-full md:w-auto mb-2 md:mb-0">GreenRoost Poultry</a>
+    <a href="index.html" class="text-xl font-bold text-center w-full md:w-auto mb-2 md:mb-0">
+      GreenRoost Poultry
+    </a>
 
     <!-- Mobile menu button -->
     <button id="menu-btn" class="md:hidden text-white focus:outline-none">
@@ -23,81 +27,216 @@
 
     <!-- Menu items -->
     <ul id="menu" class="w-full md:w-auto md:flex md:space-x-6 text-xl font-bold hidden md:block text-center">
-      <li class="mt-2 md:mt-0"><a href="index.html" class="block hover:text-yellow-300">Home</a></li>
-      <li class="mt-2 md:mt-0"><a href="products.html" class="block hover:text-yellow-300">Products</a></li>
-      <li class="mt-2 md:mt-0"><a href="contact.html" class="block hover:text-yellow-300">Contact</a></li>
+      <li class="mt-2 md:mt-0">
+        <a href="index.html" class="block hover:text-yellow-300">Home</a>
+      </li>
+      <li class="mt-2 md:mt-0">
+        <a href="products.html" class="block hover:text-yellow-300">Products</a>
+      </li>
+      <li class="mt-2 md:mt-0">
+        <a href="contact.html" class="block hover:text-yellow-300">Contact</a>
+      </li>
     </ul>
   </div>
 </nav>
 
-<!-- Toggle Script -->
-<script>
-  const menuBtn = document.getElementById('menu-btn');
-  const menu = document.getElementById('menu');
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+<br>
+    <br>
+        
+    <br>
+<body>
+    <!-- About Section -->
+    <section class="py-16 px-4 md:px-32 bg-gray-50 text-center">
+      <h2 class="text-3xl font-bold text-green-800 mb-6 animate-fade-in">
+        About Us
+      </h2>
+      <p class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed mb-10">
+        Founded in 2020, <strong>GreenRoost Poultry</strong> was born out of a
+        passion for healthy living and sustainable farming. From humble
+        beginnings in the heart of Ghana, we’ve grown into a trusted name for
+        premium poultry products that nourish families and support local
+        businesses.
+      </p>
 
-  menuBtn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
-</script>
+      <div class="grid md:grid-cols-2 gap-10 text-left">
+        <div class="bg-white p-6 rounded shadow animate-fade-in">
+          <h3 class="text-xl font-bold text-green-700 mb-3">🐔 What We Do</h3>
+          <p class="text-gray-700">
+            We specialize in <strong>ethically-raised broilers</strong>,
+            <strong>high-yield layers</strong>, and
+            <strong>100% organic poultry feed</strong>. Our chickens are raised
+            with care, free from harmful additives, and our eggs are gathered
+            fresh daily.
+          </p>
+        </div>
 
+        <div class="bg-white p-6 rounded shadow animate-fade-in">
+          <h3 class="text-xl font-bold text-green-700 mb-3">🌿 Our Mission</h3>
+          <p class="text-gray-700">
+            To provide fresh, ethically-raised poultry products that promote
+            healthy living and uplift local communities through sustainable
+            agriculture.
+          </p>
+        </div>
 
-  <!-- [insert navbar code here] -->
+        <div class="bg-white p-6 rounded shadow animate-fade-in md:col-span-2">
+          <h3 class="text-xl font-bold text-green-700 mb-3">👁️ Our Vision</h3>
+          <p class="text-gray-700">
+            To become Ghana’s leading name in responsible poultry farming, known
+            for our quality, transparency, and community-driven values.
+          </p>
+        </div>
+      </div>
 
-  <section class="py-16 px-4 md:px-32 text-center bg-gray-50">
-    <h2 class="text-3xl font-bold mb-6">About Us</h2>
-   
-    
-   <div class="container">
-    
-    
-  <pre class="bg-gray-100 p-4 rounded shadow-md">
-    
+      <!-- Timeline -->
+      <div class="mt-12">
+        <h3 class="text-2xl font-bold text-green-800 mb-6">📈 Our Journey</h3>
+        <div class="grid gap-4 max-w-2xl mx-auto text-left">
+          <div class="bg-white p-4 rounded shadow">
+            <strong>2020:</strong> GreenRoost Poultry was established with 100
+            chickens and 2 staff.
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <strong>2021:</strong> Expanded to supply local markets with fresh
+            eggs and broilers.
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <strong>2022:</strong> Launched our first organic feed product line.
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <strong>2023:</strong> Partnered with 10+ schools and hotels across
+            Northern Ghana.
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <strong>2024:</strong> Introduced mobile delivery services for
+            customers in Tamale.
+          </div>
+        </div>
+      </div>
 
-    <p class="mb-4"> About Us GreenRoost Poultry
+      <!-- Team -->
+      <div class="mt-16">
+        <h3 class="text-2xl font-bold text-green-800 mb-6">👩‍🌾 Meet Our Team</h3>
+        <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto text-left">
+          <div class="bg-white p-4 rounded shadow">
+            <h4 class="font-bold text-lg text-green-700">Sumaila Ayamba</h4>
+            <p class="text-gray-700 text-sm">
+              Founder & Farm Manager<br />Passionate about sustainable farming
+              and youth empowerment.
+            </p>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <h4 class="font-bold text-lg text-green-700">
+              Fatima Abdul-Rahman
+            </h4>
+            <p class="text-gray-700 text-sm">
+              Operations Lead<br />Ensures day-to-day farm activities run
+              smoothly and efficiently.
+            </p>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <h4 class="font-bold text-lg text-green-700">Yaw Mensah</h4>
+            <p class="text-gray-700 text-sm">
+              Poultry Health Specialist<br />Keeps our flock healthy and our
+              biosecurity standards high.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-Founded in 2020, GreenRoost Poultry was born out of a passion for healthy living and sustainable farming. From humble beginnings in the heart of Ghana, we’ve grown into a trusted name for premium poultry products that nourish families and support local businesses.
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-10 px-6">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left"
+      >
+        <!-- Company Info -->
+        <div>
+          <h3 class="text-2xl font-bold mb-2">GreenRoost Poultry</h3>
+          <p class="text-sm text-gray-300">
+            Providing fresh, ethical poultry products across Ghana since 2020.
+          </p>
+        </div>
 
-At GreenRoost, we specialize in ethically-raised broilers, high-yield layers, and 100% organic poultry feed. Our chickens are raised with care, free from harmful additives, and our eggs are gathered fresh daily, ensuring quality and taste you can trust.
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-xl font-semibold mb-2">Quick Links</h4>
+          <ul class="space-y-1 text-sm">
+            <li>
+              <a href="index.html" class="hover:underline hover:text-yellow-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="products.html"
+                class="hover:underline hover:text-yellow-300"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a href="about.html" class="hover:underline hover:text-yellow-300"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="hover:underline hover:text-yellow-300"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
 
-We’re more than just a farm — we’re a community committed to healthier food systems, responsible farming practices, and building a stronger future for agriculture in Ghana.
-🎯 Our Mission
+        <!-- Social Media -->
+        <div>
+          <h4 class="text-xl font-semibold mb-2">Connect with Us</h4>
+          <div class="flex justify-center md:justify-start space-x-4 text-xl">
+            <a href="#" class="hover:text-yellow-300 transition"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="hover:text-yellow-300 transition"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="hover:text-yellow-300 transition"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </div>
 
-To provide fresh, ethically-raised poultry products that promote healthy living and uplift local communities through sustainable agriculture.
-👁️ Our Vision
+      <!-- Bottom -->
+      <div
+        class="mt-10 border-t border-green-700 pt-4 text-sm text-center text-gray-300"
+      >
+        &copy; 2025 GreenRoost Poultry. All rights reserved.
+      </div>
+    </footer>
 
-To become Ghana’s leading name in responsible poultry farming, known for our quality, transparency, and community-driven values.
-📈 Our Journey
-Year	Milestone
-2020	GreenRoost Poultry was established with 100 chickens and 2 staff.
-2021	Expanded to supply local markets with fresh eggs and broilers.
-2022	Launched our first organic feed product line.
-2023	Partnered with 10+ schools and hotels across Northern Ghana.
-2024	Introduced mobile delivery services for customers in Tamale.
-Meet Our Team
-
-    Sumaila Ayamba – Founder & Farm Manager
-    Passionate about sustainable farming and youth empowerment.
-
-    Fatima Abdul-Rahman – Operations Lead
-    Ensures day-to-day farm activities run smoothly and efficiently.
-
-    Yaw Mensah – Poultry Health Specialist
-    Keeps our flock healthy and our biosecurity standards high.</p>
-   </pre>
-   </div>
-  </section>
-
-  <!-- Footer -->
-
-  <footer class="bg-green-800 text-white py-6 text-center">
-  <p>&copy; 2025 Sumaila Poultry Farm. All rights reserved.</p>
-  <div class="mt-2 space-x-4">
-    <a href="#" class="hover:underline">Facebook</a>
-    <a href="#" class="hover:underline">Instagram</a>
-    <a href="#" class="hover:underline">WhatsApp</a>
-  </div>
-</footer>
-
-  <!-- [insert footer code here] -->
-</body>
+    <!-- Custom CSS Animation (Optional) -->
+    <style>
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in {
+        animation: fade-in 0.7s ease-out both;
+      }
+    </style>
+  </body>
 </html>
